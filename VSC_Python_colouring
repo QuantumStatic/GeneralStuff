@@ -12,11 +12,11 @@ I was really tired with the syntax colouring in VSC so here is my choice of colo
             {
                 "scope": "keyword.operator",
                 "settings": {
-                    "foreground": "#f4148bf1" // Operators
+                    "foreground": "#f4148b" // Operators
                 }
             },
             {
-                "scope": "string.quoted.double.single-line.python",
+                "scope": "string.quoted.double.single-line.python, string.quoted.single.single-line.python, string.quoted.single.block.python, string.quoted.double.block.python",
                 "settings": {
                     "foreground": "#ffe600" // Strings
                 }
@@ -34,7 +34,7 @@ I was really tired with the syntax colouring in VSC so here is my choice of colo
                 }
             },
             {
-                "scope": "support.function.magic.python, support.function.builtin.python",
+                "scope": "support.function.magic.python, support.function.builtin.python, entity.name.function.decorator.python",
                 "settings": {
                     "foreground": "#5ff8b0ed" // Magic Methods
                 }
@@ -54,7 +54,7 @@ I was really tired with the syntax colouring in VSC so here is my choice of colo
             {
                 "scope": "comment.line.number-sign.python",
                 "settings": {
-                    "foreground": "#fadc97" // comments
+                    "foreground": "#fbd5a2" // comments
                 }
             },
             {
