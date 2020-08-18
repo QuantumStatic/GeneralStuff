@@ -1,7 +1,7 @@
 I was really tired with the syntax colouring in VSC so here is my choice of colours. Paste this code in your settings.json file in VSC. 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- "editor.tokenColorCustomizations": {
+"editor.tokenColorCustomizations": {
         "textMateRules": [
             {
                 "scope": "variable.parameter.function.python, variable.language.python",
