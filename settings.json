@@ -1,0 +1,96 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.languageServer": "Microsoft",
+    "python.pythonPath": "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "window.zoomLevel": 1.2,
+    "files.autoSave": "afterDelay",
+    "bracket-pair-colorizer-2.colors": [ 
+        "Gold",
+        "Orchid",
+        "LightSkyBlue"
+    ],
+    "bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "variable.parameter.function.python, variable.language.python, variable.parameter.function.language.python, variable.parameter.function.language.special.self.python, variable.language.special.self.python",
+                "settings": {
+                    "foreground": "#fa902d" // Function Arguments
+                }
+            },
+            {
+                "scope": "keyword.operator",
+                "settings": {
+                    "foreground": "#f4148b" // Operators
+                }
+            },
+            {
+                "scope": "string.quoted.double.single-line.python, string.quoted.single.single-line.python, string.quoted.single.block.python, string.quoted.double.block.python, constant.character.escape.linefeed.python, string.quoted.single.python",
+                "settings": {
+                    "foreground": "#ffe600" // Strings
+                }
+            },
+            {
+                "scope": "entity.name.function.python, punctuation.definition.decorator.python, meta.function-call.generic.python",
+                "settings": {
+                    "foreground": "#6adb3e" // Normal Function Names
+                }
+            },
+            {
+                "scope": "storage.type.function.python, storage.type.class.python, storage.modifier.global.python",
+                "settings": {
+                    "foreground": "#c660f6" // def keyword & class keyword
+                }
+            },
+            {
+                "scope": "support.function.magic.python, support.function.builtin.python, entity.name.function.decorator.python",
+                "settings": {
+                    "foreground": "#5ff8b0ed" // Magic Methods
+                }
+            },
+            {
+                "scope": "constant.language.python",
+                "settings": {
+                    "foreground": "#ae73ce" // True, False & None
+                }
+            },
+            {
+                "scope": "meta.item-access.arguments.python, meta.function-call.arguments.python, meta.function.parameters.python",
+                "settings": {
+                    "foreground": "#DCDCAA" // stuff in a bracket
+                }
+            },
+            {
+                "scope": "comment.line.number-sign.python",
+                "settings": {
+                    "foreground": "#f8cc93" // comments
+                }
+            },
+            {
+                "scope": "keyword.control.import.from.python, keyword.control.import.python, keyword.control.flow.python, keyword.operator.logical.python, keyword.other.python, support.function.builtin.python",
+                "settings": {
+                    "foreground": "#02b7f3" // control statments & print statment
+                }
+            },
+        ]
+    },
+    "bracket-pair-colorizer-2.showBracketsInGutter": true,
+    "git.autofetch": true,
+    "git.fetchOnPull": true,
+    "git.supportCancellation": true,
+    "python.autoComplete.extraPaths": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3"
+    ],
+    "bracket-pair-colorizer-2.colorMode": "Consecutive",
+    "bracket-pair-colorizer-2.highlightActiveScope": true,
+    "bracket-pair-colorizer-2.activeScopeCSS": [
+
+        "borderStyle : solid",
+        "borderWidth : 1px",
+        "borderColor : {color}",
+        "opacity: 0.5"
+    ],
+}
