@@ -6,15 +6,18 @@ from copy import deepcopy
 class BinarySearchTree:
     class Node:
         __slots__ = ['parent', 'right', 'left', 'value', 'repititions']
-        def __init__(self, parent=None, rightChild=None, leftChild=None, value=int()):
-            self.parent, self.right, self.left, self.value, self.repititions = parent, rightChild, leftChild, value, int()
+        def __init__(self, parent=None, rightChild=None, leftChild=None, value=int(), repititions=int()):
+            self.parent, self.right, self.left, self.value, self.repititions = parent, rightChild, leftChild, value, repititions
 
         def __str__(self):
             return str({'value':self.value, 'parent':self.parent.value if self.parent is not None else None, 'right':self.right.value if self.right is not None else None, 'left':self.left.value if self.left is not None else None, 'repititions': self.repititions})
-            
+
+        def __repr__(self):
+            return NotImplementedError
+
         def __call__(self):
             return (self)
-        
+
         def copy(self):
             return deepcopy(self)
 
@@ -168,17 +171,19 @@ class BinarySearchTree:
         if toDelete.repititions:
             temp = toDelete.copy()
             toDelete.repititions -=1
-            return temp
+            return (temp)
         if toDelete.left is None:
             return self.transplant(toDelete, toDelete.right)
         elif toDelete.right is None:
-            return(self.transplant(toDelete, toDelete.left))
+            return self.transplant(toDelete, toDelete.left)
         else:
             replacement = self.next(toDelete)
-            print(replacement)
             self.transplant(replacement, replacement.right)
             replacement.right, replacement.left = toDelete.right, toDelete.left
             return self.transplant(toDelete, replacement)
+
+    def __repr__(self):
+            return NotImplementedError
 
 
 
