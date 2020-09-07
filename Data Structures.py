@@ -1,4 +1,4 @@
-from myFunctions import execute_this, nearMatching
+from myFunctionsG import execute_this, nearMatching
 from statistics import mean
 from random import shuffle
 from copy import deepcopy
