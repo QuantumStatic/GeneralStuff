@@ -1,2 +1,2 @@
-# GeneralStuff
-Me putting stuff that kind of improves other stuff.  Error: "Too Vague"
+# DSA
+All the Data structures or algorithms I learn, I post them here. 
